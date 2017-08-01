@@ -6,10 +6,30 @@ package com.example.aro_pc.minasyangps;
 
 public class Consts {
 
+    //sharedPreferance
+    public static final String SHARED_PREFERANCES_NAME = "AppSharedPref";
+    public static final String SHARED_PREFERANCES_LOGEDIN = "logeIn";
+    public static final String SHARED_PREFERANCES_UID = "userID";
+    public static final String SHARED_PREFERANCES_PROFILE_PICTURE = "profilePictiure";
+    public static final String SHARED_PREFERANCES_PROFILE_PICTURE_FILE_DIR = "profilePictiureFileDir";
+
+
+
+
+
     //values in database
     public static final String DATABASE_NAME_VALUE = "Users";
     public static final String GET_LOCATION_VALUE = "getLocation";
     public static final String GET_VOICE_VALUE = "getVoice";
+    public static final String USER_MODEL_STATUS_VALUE_ONLINE = "online";
+    public static final String USER_MODEL_STATUS_VALUE_OFFLINE = "offline";
+    public static final String USER_MODEL_VOICE_URL_VALUE = "voiceUrl";
+    public static final String USER_MODEL_VOICE_VALUE = "voice";
+    public static final String USER_MODEL_LOCATION_VALUE = "location";
+    public static final String USER_MODEL_IMAGEURL_VALUE = "image";
+
+
+
 
     //names in database
 
@@ -21,9 +41,11 @@ public class Consts {
     public static final String USER_MODEL_LOCATION = "location";
     public static final String USER_MODEL_VOICE = "voice";
     public static final String USER_MODEL_VOICE_URL = "voiceUrl";
-    public static final String USER_MODEL_IMAGEURL = "image";
+    public static final String USER_MODEL_IMAGEURL = "imageUrl";
     public static final String UID = "uid";
+    public static final String USER_MODEL_ONLINE_STATUS = "online";
 
+    public static final String CHAT_MODEL_NAME = "chat";
 
     //database json for lacation
 
@@ -39,6 +61,7 @@ public class Consts {
     public static final String USERS_STORAGE_NAME = "users_storage";
     public static final String VOICE_STORAGE = "voice";
     public static final String ACCOUNT_IMAGE_STORAGE = "accountImage";
+
 
 
 

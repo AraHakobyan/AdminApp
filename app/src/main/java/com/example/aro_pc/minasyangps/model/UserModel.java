@@ -1,7 +1,7 @@
 package com.example.aro_pc.minasyangps.model;
 
 /**
- * Created by Aro-PC on 7/14/2017.
+ * Created by Aro-PC on 7/24/2017.
  */
 
 public class UserModel {
@@ -19,7 +19,17 @@ public class UserModel {
     private String password;
     private String location;
     private String voice;
-    private String image;
+    private String imageUrl;
+
+    public String getOnline() {
+        return online;
+    }
+
+    public void setOnline(String online) {
+        this.online = online;
+    }
+
+    private String online;
 
     public String getName() {
         return name;
@@ -61,11 +71,11 @@ public class UserModel {
         this.voice = voice;
     }
 
-    public String getImage() {
-        return image;
+    public String getImageUrl() {
+        return imageUrl;
     }
 
-    public void setImage(String imageUrl) {
-        this.image = imageUrl;
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 }

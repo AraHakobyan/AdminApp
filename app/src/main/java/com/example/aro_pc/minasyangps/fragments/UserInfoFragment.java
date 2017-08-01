@@ -100,7 +100,7 @@ public class UserInfoFragment extends Fragment implements View.OnClickListener, 
         storageReference = FirebaseStorage.getInstance().getReference();
 
         userModel = UserHelper.getInstance().getmUser();
-        if (userModel.getImage().toString().equals(Consts.USER_MODEL_IMAGEURL)){
+        if (userModel.getImageUrl().toString().equals(Consts.USER_MODEL_IMAGEURL_VALUE)){
             imageView.setImageResource(R.drawable.ic_account_box_black_24dp);
         } else {
             StorageReference storageReference1 = storageReference.child(USERS_STORAGE_NAME).child(userModel.getUid()).child(Consts.ACCOUNT_IMAGE_STORAGE);
@@ -166,7 +166,7 @@ public class UserInfoFragment extends Fragment implements View.OnClickListener, 
             case R.id.voice_recorder_button:
                 if (!isAnimatedUp){
                     animateUpCardView();
-                    animateUpRecorderFragment();
+//                    animateUpRecorderFragment();
 
                     isAnimatedUp = true;
                 }
@@ -178,7 +178,7 @@ public class UserInfoFragment extends Fragment implements View.OnClickListener, 
             case R.id.get_location_button:
                 if (!isAnimatedUp){
                     animateUpCardView();
-                    animateUpRecorderFragment();
+//                    animateUpRecorderFragment();
 
                     isAnimatedUp = true;
                 }
@@ -240,7 +240,8 @@ public class UserInfoFragment extends Fragment implements View.OnClickListener, 
     }
 
     private void animateUpCardView() {
-        userInfoCardView.animate().yBy(-userInfoLayout.getHeight()).setDuration(150).start();
+//        userInfoCardView.animate().yBy(-userInfoLayout.getHeight()).setDuration(150).start();
+        userInfoLayout.setVisibility(View.GONE);
 //        containr.animate().yBy(-userInfoLayout.getHeight()).setDuration(150).start();
 
     }
