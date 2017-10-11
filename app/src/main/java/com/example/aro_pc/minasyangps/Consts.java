@@ -40,6 +40,7 @@ public class Consts {
     public static final String USER_MODEL_PASSWORD = "password";
     public static final String USER_MODEL_LOCATION = "location";
     public static final String USER_MODEL_VOICE = "voice";
+    public static final String USER_MODEL_BACKGROUND = "service";
     public static final String USER_MODEL_VOICE_URL = "voiceUrl";
     public static final String USER_MODEL_IMAGEURL = "imageUrl";
     public static final String UID = "uid";

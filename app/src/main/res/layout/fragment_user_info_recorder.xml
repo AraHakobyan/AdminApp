@@ -4,8 +4,22 @@
              android:layout_height="match_parent"
              tools:context="com.example.aro_pc.minasyangps.fragments.UserInfoRecorderFragment">
 
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/server_disconnected_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:gravity="center"
+            android:text="Server disconnected"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </RelativeLayout>
+
 
     <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/layout_record_id"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"

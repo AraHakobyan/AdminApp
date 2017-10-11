@@ -7,6 +7,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.example.aro_pc.minasyangps.R;
@@ -42,6 +43,7 @@ public class AllUsersAdapter extends RecyclerView.Adapter<AllUsersAdapter.UsersL
     @Override
     public void onBindViewHolder(AllUsersAdapter.UsersListViewHolder holder, final int position) {
         holder.textView.setText(userModels.get(position).getName());
+        holder.isServiceOn.setChecked(Boolean.parseBoolean(userModels.get(position).getService()));
         holder.cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -63,10 +65,12 @@ public class AllUsersAdapter extends RecyclerView.Adapter<AllUsersAdapter.UsersL
 
         private CardView cardView;
         private TextView textView;
+        private CheckBox isServiceOn;
 
         public UsersListViewHolder(View itemView) {
             super(itemView);
 
+            isServiceOn = (CheckBox) itemView.findViewById(R.id.is_service_on_chech_box);
             cardView = (CardView) itemView.findViewById(R.id.user_list_cardview);
             textView = (TextView) itemView.findViewById(R.id.user_name_in_list_tv);
         }

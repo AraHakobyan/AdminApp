@@ -51,7 +51,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         forFragments();
 
         database = FirebaseDatabase.getInstance();
-
 //        startService(new Intent(this,BackgroundService.class));
 
     }

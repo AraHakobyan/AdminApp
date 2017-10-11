@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">MinasyanGps</string>
+    <string name="app_name">Admin</string>
     <string name="heat_map_layers">Layerd Map</string>
     <string name="simple_map">Map</string>
     <string name="heat_mind_map">Mind Map</string>

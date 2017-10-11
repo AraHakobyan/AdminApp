@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
 
-        android:name="android.support.multidex.MultiDexApplication"
+        android:name=".AdminApp"
         android:theme="@style/AppTheme">
         <activity
             android:configChanges="orientation"

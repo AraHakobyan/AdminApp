@@ -5,14 +5,16 @@ package com.example.aro_pc.minasyangps.model;
  */
 
 public class UserModel {
-    public String getUid() {
-        return uid;
+
+    public String getService() {
+        return service;
     }
 
-    public void setUid(String uid) {
-        this.uid = uid;
+    public void setService(String service) {
+        this.service = service;
     }
 
+    private String service;
     private String uid;
     private String name;
     private String userName;
@@ -20,6 +22,14 @@ public class UserModel {
     private String location;
     private String voice;
     private String imageUrl;
+
+    public String getUid() {
+        return uid;
+    }
+
+    public void setUid(String uid) {
+        this.uid = uid;
+    }
 
     public String getOnline() {
         return online;
